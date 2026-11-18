@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "package": "githubnext/gh-cao",
+  "source": "githubnext/gh-cao@v0.2.5",
+  "resolvedCommit": "0206402a798c97c4af4b42dc566830c978186412",
+  "installer": "gh-aw v1.2.2",
+  "files": [
+    {
+      "source": ".github/aw/instructions.md",
+      "destination": ".github/aw/instructions.md",
+      "sha256": "2aafa3fe6af83d43930b5a526e50a6a568e52a731df957883093fce11a8441fe"
+    },
+    {
+      "source": ".github/workflows/cao-validate.yml",
+      "destination": ".github/workflows/cao-validate.yml",
+      "sha256": "60dd333568d74227dc423a43786fc078753312798d8310033d5e6afad921fb1a"
+    },
+    {
+      "source": ".github/workflows/shared/authority.mjs",
+      "destination": ".github/workflows/shared/authority.mjs",
+      "sha256": "aed10c31b2bc638f90d4d61726c73afce119ecd59c0335b4e430e7173f260fec"
+    },
+    {
+      "source": ".github/workflows/shared/control.mjs",
+      "destination": ".github/workflows/shared/control.mjs",
+      "sha256": "32c29d1596dc0ccc0aa059f69489c06d1fafda5fb275f640e3cf2391580094e5"
+    },
+    {
+      "source": ".github/workflows/shared/github-apps.mjs",
+      "destination": ".github/workflows/shared/github-apps.mjs",
+      "sha256": "cecdaaa5df9c43ffd2dec61a581535ac7a18e42c6eb1e5903e6c6913d8043853"
+    },
+    {
+      "source": ".github/workflows/shared/inventory-credentials.mjs",
+      "destination": ".github/workflows/shared/inventory-credentials.mjs",
+      "sha256": "b9d53a0dbb51f6a328822d1b94e8d1824382123b1143a6d38655015e0cecb596"
+    },
+    {
+      "source": ".github/workflows/shared/operations.mjs",
+      "destination": ".github/workflows/shared/operations.mjs",
+      "sha256": "9ac318a4f366cffe1cc19fa5af210275ab7749194fcbe771dd89e5463b5eed40"
+    },
+    {
+      "source": ".github/workflows/shared/policy.mjs",
+      "destination": ".github/workflows/shared/policy.mjs",
+      "sha256": "b1c7872a2d28f0019d6f000204e6a0f1903762a7baa86998aae6c5eb19a03fdb"
+    },
+    {
+      "source": ".github/workflows/shared/value-acquisition.mjs",
+      "destination": ".github/workflows/shared/value-acquisition.mjs",
+      "sha256": "a271de74ec4e05d2728892c27bd03aa30ae7b754dcccede65fee3abf23bf96d9"
+    }
+  ]
+}
