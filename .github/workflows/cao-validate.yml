@@ -162,7 +162,10 @@ jobs:
           set +e
           node .github/workflows/shared/control.mjs validate-policy .github/workflows/cao.json > "$RUNNER_TEMP/cao-validation.json"
           status=$?
-          if [ "$status" -eq 0 ]; then
+          if [ "$status" -eq 0 ] && {
+            compgen -G '.github/workflows/*.md' >/dev/null ||
+            compgen -G '.github/workflows/*.lock.yml' >/dev/null
+          }; then
             gh aw compile --strict --no-emit --no-check-update --schedule-seed "$GITHUB_REPOSITORY"
             status=$?
           fi
