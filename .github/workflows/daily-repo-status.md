@@ -75,8 +75,11 @@ concurrency:
 tools:
   bash: ["cat"]
   github:
-    mode: gh-proxy
+    mode: local
     toolsets: [repos, issues, pull_requests, actions]
+    args: ["stdio", "--toolsets=", "--tools=get_file_contents,list_commits,list_releases,list_issues,issue_read,list_pull_requests,pull_request_read,actions_list"]
+    allowed: [get_file_contents, list_commits, list_releases, list_issues, issue_read, list_pull_requests, pull_request_read, actions_list]
+    allowed-repos: ["richard-fowles-epam/cao-lab-target"]
     lockdown: false
     min-integrity: none
 
@@ -103,7 +106,7 @@ safe-outputs:
 steps:
   - name: Validate the standalone report target
     id: repo_status_target
-    uses: actions/github-script@v9
+    uses: actions/github-script@v9.0.0
     env:
       REQUESTED_MODE: ${{ inputs.safe_output_mode || 'review' }}
       OUTPUT_REPOSITORY: ${{ (inputs.safe_output_mode || 'review') == 'review' && (inputs.safe_output_repo || github.repository) || inputs.target_repo }}
@@ -130,12 +133,15 @@ steps:
           || process.env.REVIEW_OUTPUT_REPO.toLowerCase() !== process.env.OUTPUT_REPOSITORY.toLowerCase())) {
           throw new Error('Requested report target, mode or destination differs from admitted routing');
         }
+        if (target && target.full_name.toLowerCase() !== 'richard-fowles-epam/cao-lab-target') {
+          throw new Error('Daily Repo Status MCP access is restricted to cao-lab-target');
+        }
         const directory = '/tmp/gh-aw/agent/daily-repo-status';
         fs.mkdirSync(directory, { recursive: true });
         fs.writeFileSync(`${directory}/target.json`, JSON.stringify({ target: target || null }));
         core.setOutput('eligible', Boolean(target));
   - name: Fix the daily reporting window
-    uses: actions/github-script@v9
+    uses: actions/github-script@v9.0.0
     with:
       github-token: ${{ github.token }}
       script: |
@@ -158,7 +164,7 @@ steps:
         }));
   - name: Read existing owned reports
     if: ${{ steps.repo_status_target.outputs.eligible == 'true' }}
-    uses: actions/github-script@v9
+    uses: actions/github-script@v9.0.0
     env:
       OUTPUT_REPOSITORY: ${{ (inputs.safe_output_mode || 'review') == 'review' && (inputs.safe_output_repo || github.repository) || inputs.target_repo }}
     with:
