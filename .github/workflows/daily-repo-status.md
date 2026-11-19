@@ -77,7 +77,6 @@ tools:
   github:
     mode: local
     toolsets: [repos, issues, pull_requests, actions]
-    args: ["stdio", "--toolsets=", "--tools=get_file_contents,list_commits,list_releases,list_issues,issue_read,list_pull_requests,pull_request_read,actions_list"]
     allowed: [get_file_contents, list_commits, list_releases, list_issues, issue_read, list_pull_requests, pull_request_read, actions_list]
     allowed-repos: ["richard-fowles-epam/cao-lab-target"]
     lockdown: false
