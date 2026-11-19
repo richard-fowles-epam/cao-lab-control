@@ -39,6 +39,13 @@
       "allowed-repositories": [
         "richard-fowles-epam/cao-lab-control"
       ]
+    },
+    "workflows": {
+      "daily-repo-status": {
+        "max-mode": "review",
+        "max-repositories": 1,
+        "mode": "review"
+      }
     }
   },
   "gh-aw-version": "v1.2.2",
