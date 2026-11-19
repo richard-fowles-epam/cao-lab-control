@@ -37,7 +37,8 @@
         "richard-fowles-epam"
       ],
       "allowed-repositories": [
-        "richard-fowles-epam/cao-lab-control"
+        "richard-fowles-epam/cao-lab-control",
+        "richard-fowles-epam/cao-lab-target"
       ]
     },
     "workflows": {
