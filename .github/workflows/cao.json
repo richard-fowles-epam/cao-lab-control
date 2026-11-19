@@ -7,7 +7,29 @@
         "richard-fowles-epam/cao-lab-control"
       ]
     },
-    "campaigns": {},
+    "campaigns": {
+      "repo-assist": {
+        "mode": "review",
+        "max-repositories": 1,
+        "workers": {
+          "issue-fix": {
+            "workflow": "repo-assist-issue-fix",
+            "enabled": false
+          },
+          "issue-triage": {
+            "workflow": "repo-assist-issue-triage",
+            "enabled": false
+          },
+          "maintenance": {
+            "workflow": "repo-assist-maintenance"
+          },
+          "pr-upkeep": {
+            "workflow": "repo-assist-pr-upkeep",
+            "enabled": false
+          }
+        }
+      }
+    },
     "marketplace": {
       "registries": [
         {
