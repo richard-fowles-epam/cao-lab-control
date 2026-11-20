@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/githubnext/gh-cao/main/.github/workflows/shared/cao.schema.json",
+  "control-plane": {
+    "activity": {
+      "repositories": [
+        "richard-fowles-epam/cao-lab-control"
+      ]
+    },
+    "campaigns": {},
+    "marketplace": {
+      "registries": [
+        {
+          "auth": {
+            "type": "none"
+          },
+          "id": "official",
+          "name": "Official CAO catalog",
+          "ref": "main",
+          "repository": "githubnext/gh-cao"
+        },
+        {
+          "auth": {
+            "type": "none"
+          },
+          "format": "workflows",
+          "id": "agentics",
+          "name": "Agentics workflows",
+          "path": "workflows",
+          "ref": "main",
+          "repository": "githubnext/agentics"
+        }
+      ]
+    },
+    "scope": {
+      "allowed-owners": [
+        "richard-fowles-epam"
+      ],
+      "allowed-repositories": [
+        "richard-fowles-epam/cao-lab-control",
+        "richard-fowles-epam/cao-lab-target"
+      ]
+    },
+    "workflows": {
+      "daily-repo-status": {
+        "max-mode": "review",
+        "max-repositories": 1,
+        "mode": "review"
+      }
+    }
+  },
+  "gh-aw-version": "v1.2.3",
+  "version": 1
+}
