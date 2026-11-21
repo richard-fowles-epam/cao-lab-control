@@ -10,9 +10,12 @@
       "repo-assist": {
         "enabled": true,
         "mode": "review",
-        "max-repositories": 1,
+        "max-repositories": 2,
         "targets": {
           "richard-fowles-epam/cao-lab-target": {
+            "mode": "review"
+          },
+          "richard-fowles-epam/cao-lab-target-2": {
             "mode": "review"
           }
         },
@@ -67,7 +70,8 @@
       ],
       "allowed-repositories": [
         "richard-fowles-epam/cao-lab-control",
-        "richard-fowles-epam/cao-lab-target"
+        "richard-fowles-epam/cao-lab-target",
+        "richard-fowles-epam/cao-lab-target-2"
       ]
     },
     "workflows": {
