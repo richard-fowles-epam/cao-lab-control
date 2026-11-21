@@ -6,40 +6,7 @@
         "richard-fowles-epam/cao-lab-control"
       ]
     },
-    "campaigns": {
-      "repo-assist": {
-        "enabled": true,
-        "mode": "review",
-        "max-repositories": 2,
-        "targets": {
-          "richard-fowles-epam/cao-lab-target": {
-            "mode": "review"
-          },
-          "richard-fowles-epam/cao-lab-target-2": {
-            "mode": "review"
-          }
-        },
-        "workers": {
-          "issue-fix": {
-            "enabled": true,
-            "workflow": "repo-assist-issue-fix"
-          },
-          "issue-triage": {
-            "enabled": true,
-            "workflow": "repo-assist-issue-triage"
-          },
-          "maintenance": {
-            "enabled": true,
-            "max-mode": "review",
-            "workflow": "repo-assist-maintenance"
-          },
-          "pr-upkeep": {
-            "enabled": true,
-            "workflow": "repo-assist-pr-upkeep"
-          }
-        }
-      }
-    },
+    "campaigns": {},
     "marketplace": {
       "registries": [
         {
