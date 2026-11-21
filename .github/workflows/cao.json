@@ -21,11 +21,11 @@
         },
         "workers": {
           "issue-fix": {
-            "enabled": false,
+            "enabled": true,
             "workflow": "repo-assist-issue-fix"
           },
           "issue-triage": {
-            "enabled": false,
+            "enabled": true,
             "workflow": "repo-assist-issue-triage"
           },
           "maintenance": {
@@ -34,7 +34,7 @@
             "workflow": "repo-assist-maintenance"
           },
           "pr-upkeep": {
-            "enabled": false,
+            "enabled": true,
             "workflow": "repo-assist-pr-upkeep"
           }
         }
