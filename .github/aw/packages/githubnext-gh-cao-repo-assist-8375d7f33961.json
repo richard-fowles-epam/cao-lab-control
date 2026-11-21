@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "package": "githubnext/gh-cao/repo-assist",
+  "source": "githubnext/gh-cao/repo-assist@v0.2.5",
+  "resolvedCommit": "0206402a798c97c4af4b42dc566830c978186412",
+  "installer": "gh-aw v1.2.3",
+  "files": [
+    {
+      "source": ".github/workflows/repo-assist-issue-fix.md",
+      "destination": ".github/workflows/repo-assist-issue-fix.md",
+      "sha256": "03990a3c1763b3d6df973566fec0a222572f7d6f2a286164f4218f297d17c693"
+    },
+    {
+      "source": ".github/workflows/repo-assist-issue-triage.md",
+      "destination": ".github/workflows/repo-assist-issue-triage.md",
+      "sha256": "31f69c003c54aad360184c7aa4f723f7d27f11bcf48f1b53c0dc6b24bc06c053"
+    },
+    {
+      "source": ".github/workflows/repo-assist-maintenance.md",
+      "destination": ".github/workflows/repo-assist-maintenance.md",
+      "sha256": "c8a521068ac729fddbc5b21563d06b0fc9cbc6c0583d1c8b1a85549caf205aa6"
+    },
+    {
+      "source": ".github/workflows/repo-assist-pr-upkeep.md",
+      "destination": ".github/workflows/repo-assist-pr-upkeep.md",
+      "sha256": "4e6ff536d2545eb361613db66443f4ded3bdb96b00476c9979b3192557bad3ff"
+    },
+    {
+      "source": ".github/workflows/repo-assist.md",
+      "destination": ".github/workflows/repo-assist.md",
+      "sha256": "05dd847e853832842e36029c56f462e90e5fd97bc914eccbd3809520129ca462"
+    }
+  ]
+}
