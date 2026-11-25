@@ -47,7 +47,7 @@
       "registries": [
         {
           "auth": {
-            "secret": "CAO_MARKETPLACE_TOKEN",
+            "secret": "MARKETPLACE_REGISTRY_TOKEN",
             "type": "pat"
           },
           "id": "official",
@@ -57,7 +57,7 @@
         },
         {
           "auth": {
-            "secret": "CAO_MARKETPLACE_TOKEN",
+            "secret": "MARKETPLACE_REGISTRY_TOKEN",
             "type": "pat"
           },
           "format": "workflows",
